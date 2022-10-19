@@ -26,6 +26,7 @@ public class biryanicontroller {
 	}
 	//add multiple biryanis to DB
 	@RequestMapping(method=RequestMethod.POST, value="/biryani/addall")
+	
 	public String addAllBiryani(@RequestBody List<biryani> b1) {
 		return service.addAllBiryani(b1);
 	}

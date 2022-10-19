@@ -1,0 +1,564 @@
+2022-10-19 13:05:19.222  INFO 8352 --- [main] c.biryaniwala.MbabiryaniwalaApplication  : Starting MbabiryaniwalaApplication using Java 17.0.3 on Bss with PID 8352 (E:\anp\mbabiryaniwala\target\classes started by chitt in E:\anp\mbabiryaniwala)
+2022-10-19 13:05:19.228  INFO 8352 --- [main] c.biryaniwala.MbabiryaniwalaApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-10-19 13:05:20.142  INFO 8352 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-19 13:05:20.228  INFO 8352 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 1 JPA repository interfaces.
+2022-10-19 13:05:21.048  WARN 8352 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'projectingArgumentResolverBeanPostProcessor' defined in class path resource [org/springframework/data/web/config/ProjectingArgumentResolverRegistrar.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: Pointcut is not well-formed: expecting ')' at character position 0
+execution (public * com.biryaniwala.controller.biryanicontroller.addAllBiryani()
+^
+
+2022-10-19 13:05:21.070  INFO 8352 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-10-19 13:05:21.112 ERROR 8352 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'projectingArgumentResolverBeanPostProcessor' defined in class path resource [org/springframework/data/web/config/ProjectingArgumentResolverRegistrar.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: Pointcut is not well-formed: expecting ')' at character position 0
+execution (public * com.biryaniwala.controller.biryanicontroller.addAllBiryani()
+^
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:537) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:270) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:762) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:567) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.4.jar:2.7.4]
+	at com.biryaniwala.MbabiryaniwalaApplication.main(MbabiryaniwalaApplication.java:13) ~[classes/:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: Pointcut is not well-formed: expecting ')' at character position 0
+execution (public * com.biryaniwala.controller.biryanicontroller.addAllBiryani()
+^
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:628) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:410) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:111) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:92) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:255) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1160) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1135) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.23.jar:5.3.23]
+	... 14 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Pointcut is not well-formed: expecting ')' at character position 0
+execution (public * com.biryaniwala.controller.biryanicontroller.addAllBiryani()
+^
+
+	at org.aspectj.weaver.tools.PointcutParser.resolvePointcutExpression(PointcutParser.java:334) ~[aspectjweaver-1.9.7.jar:na]
+	at org.aspectj.weaver.tools.PointcutParser.parsePointcutExpression(PointcutParser.java:312) ~[aspectjweaver-1.9.7.jar:na]
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.buildPointcutExpression(AspectJExpressionPointcut.java:227) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.obtainPointcutExpression(AspectJExpressionPointcut.java:198) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.getClassFilter(AspectJExpressionPointcut.java:177) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:226) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:289) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.support.AopUtils.findAdvisorsThatCanApply(AopUtils.java:321) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findAdvisorsThatCanApply(AbstractAdvisorAutoProxyCreator.java:128) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:97) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:78) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:341) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:293) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:455) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.23.jar:5.3.23]
+	... 36 common frames omitted
+
+2022-10-19 13:06:01.383  INFO 8304 --- [main] c.biryaniwala.MbabiryaniwalaApplication  : Starting MbabiryaniwalaApplication using Java 17.0.3 on Bss with PID 8304 (E:\anp\mbabiryaniwala\target\classes started by chitt in E:\anp\mbabiryaniwala)
+2022-10-19 13:06:01.388  INFO 8304 --- [main] c.biryaniwala.MbabiryaniwalaApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-10-19 13:06:02.206  INFO 8304 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-19 13:06:02.291  INFO 8304 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 1 JPA repository interfaces.
+2022-10-19 13:06:03.582  INFO 8304 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-19 13:06:03.600  INFO 8304 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-19 13:06:03.601  INFO 8304 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-19 13:06:03.829  INFO 8304 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-19 13:06:03.830  INFO 8304 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2321 ms
+2022-10-19 13:06:04.286  INFO 8304 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-19 13:06:04.295  WARN 8304 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+2022-10-19 13:06:04.837  INFO 8304 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (Feature not implemented: No details.)
+2022-10-19 13:06:04.842  INFO 8304 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-19 13:06:04.931  INFO 8304 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-19 13:06:05.036  INFO 8304 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.11.Final
+2022-10-19 13:06:05.493  INFO 8304 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-19 13:06:05.720  INFO 8304 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.DerbyTenSevenDialect
+2022-10-19 13:06:06.778  WARN 8304 --- [main] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "drop table biryani" via JDBC Statement
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "drop table biryani" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:387) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:371) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:246) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:156) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:128) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:114) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:157) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:85) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.23.jar:5.3.23]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.23.jar:5.3.23]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.23.jar:5.3.23]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.23.jar:5.3.23]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.4.jar:2.7.4]
+	at com.biryaniwala.MbabiryaniwalaApplication.main(MbabiryaniwalaApplication.java:13) ~[classes/:na]
+Caused by: java.sql.SQLSyntaxErrorException: Schema 'SA' does not exist
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.jdbc.EmbedStatement.execute(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.jdbc.EmbedStatement.execute(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-4.0.3.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	... 34 common frames omitted
+Caused by: org.apache.derby.iapi.error.StandardException: Schema 'SA' does not exist
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getSchemaDescriptor(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.iapi.sql.StatementUtil.getSchemaDescriptor(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.sql.compile.DDLStatementNode.justGetDescriptor(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.sql.compile.DDLStatementNode.getTableDescriptor(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.sql.compile.DDLStatementNode.getTableDescriptor(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.sql.compile.DropTableNode.bindStatement(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.sql.GenericStatement.prepMinion(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.sql.GenericStatement.prepare(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext.prepareInternalStatement(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	... 39 common frames omitted
+
+2022-10-19 13:06:06.861  INFO 8304 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-19 13:06:06.877  INFO 8304 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-19 13:06:07.630  WARN 8304 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-19 13:06:08.228  INFO 8304 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-19 13:06:08.245  INFO 8304 --- [main] c.biryaniwala.MbabiryaniwalaApplication  : Started MbabiryaniwalaApplication in 7.65 seconds (JVM running for 9.045)
+2022-10-19 13:07:00.951  INFO 8304 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-19 13:07:00.951  INFO 8304 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-19 13:07:00.953  INFO 8304 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-10-19 13:10:11.981  INFO 8304 --- [RMI TCP Connection(12)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-10-19 13:10:12.009  INFO 8304 --- [RMI TCP Connection(12)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-10-19 13:10:12.012  INFO 8304 --- [RMI TCP Connection(12)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-10-19 13:10:12.024  INFO 8304 --- [RMI TCP Connection(12)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-19 13:10:12.025  INFO 8304 --- [RMI TCP Connection(12)-127.0.0.1] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-10-19 13:10:12.046  INFO 8304 --- [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-19 13:10:12.051  INFO 8304 --- [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-19 13:10:16.364  INFO 6420 --- [main] c.biryaniwala.MbabiryaniwalaApplication  : Starting MbabiryaniwalaApplication using Java 17.0.3 on Bss with PID 6420 (E:\anp\mbabiryaniwala\target\classes started by chitt in E:\anp\mbabiryaniwala)
+2022-10-19 13:10:16.371  INFO 6420 --- [main] c.biryaniwala.MbabiryaniwalaApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-10-19 13:10:17.293  INFO 6420 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-19 13:10:17.399  INFO 6420 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 87 ms. Found 1 JPA repository interfaces.
+2022-10-19 13:10:18.916  INFO 6420 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-19 13:10:18.936  INFO 6420 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-19 13:10:18.936  INFO 6420 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-19 13:10:19.317  INFO 6420 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-19 13:10:19.318  INFO 6420 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2825 ms
+2022-10-19 13:10:19.768  INFO 6420 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-19 13:10:19.778  WARN 6420 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+2022-10-19 13:10:20.336  INFO 6420 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (Feature not implemented: No details.)
+2022-10-19 13:10:20.340  INFO 6420 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-19 13:10:20.431  INFO 6420 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-19 13:10:20.525  INFO 6420 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.11.Final
+2022-10-19 13:10:20.902  INFO 6420 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-19 13:10:21.130  INFO 6420 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.DerbyTenSevenDialect
+2022-10-19 13:10:22.159  WARN 6420 --- [main] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "drop table biryani" via JDBC Statement
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "drop table biryani" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:387) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:371) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:246) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:156) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:128) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:114) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:157) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:85) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.23.jar:5.3.23]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.23.jar:5.3.23]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.23.jar:5.3.23]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.23.jar:5.3.23]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.4.jar:2.7.4]
+	at com.biryaniwala.MbabiryaniwalaApplication.main(MbabiryaniwalaApplication.java:13) ~[classes/:na]
+Caused by: java.sql.SQLSyntaxErrorException: Schema 'SA' does not exist
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.jdbc.EmbedStatement.execute(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.jdbc.EmbedStatement.execute(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-4.0.3.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	... 34 common frames omitted
+Caused by: org.apache.derby.iapi.error.StandardException: Schema 'SA' does not exist
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getSchemaDescriptor(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.iapi.sql.StatementUtil.getSchemaDescriptor(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.sql.compile.DDLStatementNode.justGetDescriptor(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.sql.compile.DDLStatementNode.getTableDescriptor(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.sql.compile.DDLStatementNode.getTableDescriptor(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.sql.compile.DropTableNode.bindStatement(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.sql.GenericStatement.prepMinion(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.sql.GenericStatement.prepare(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext.prepareInternalStatement(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	... 39 common frames omitted
+
+2022-10-19 13:10:22.238  INFO 6420 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-19 13:10:22.255  INFO 6420 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-19 13:10:22.939  WARN 6420 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-19 13:10:23.550  INFO 6420 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-19 13:10:23.564  INFO 6420 --- [main] c.biryaniwala.MbabiryaniwalaApplication  : Started MbabiryaniwalaApplication in 7.972 seconds (JVM running for 9.687)
+2022-10-19 13:10:32.632  INFO 6420 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-19 13:10:32.633  INFO 6420 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-19 13:10:32.634  INFO 6420 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-10-19 13:11:52.670  INFO 6420 --- [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-10-19 13:11:52.684  INFO 6420 --- [RMI TCP Connection(11)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-10-19 13:11:52.685  INFO 6420 --- [RMI TCP Connection(11)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-10-19 13:11:52.691  INFO 6420 --- [RMI TCP Connection(11)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-19 13:11:52.692  INFO 6420 --- [RMI TCP Connection(11)-127.0.0.1] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-10-19 13:11:52.702  INFO 6420 --- [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-19 13:11:52.704  INFO 6420 --- [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-19 13:11:57.013  INFO 276 --- [main] c.biryaniwala.MbabiryaniwalaApplication  : Starting MbabiryaniwalaApplication using Java 17.0.3 on Bss with PID 276 (E:\anp\mbabiryaniwala\target\classes started by chitt in E:\anp\mbabiryaniwala)
+2022-10-19 13:11:57.016  INFO 276 --- [main] c.biryaniwala.MbabiryaniwalaApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-10-19 13:11:57.449  INFO 276 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-19 13:11:57.493  INFO 276 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interfaces.
+2022-10-19 13:11:58.148  INFO 276 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-19 13:11:58.157  INFO 276 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-19 13:11:58.157  INFO 276 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-19 13:11:58.267  INFO 276 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-19 13:11:58.267  INFO 276 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1182 ms
+2022-10-19 13:11:58.494  INFO 276 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-19 13:11:58.499  WARN 276 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+2022-10-19 13:11:58.763  INFO 276 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (Feature not implemented: No details.)
+2022-10-19 13:11:58.765  INFO 276 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-19 13:11:58.808  INFO 276 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-19 13:11:58.853  INFO 276 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.11.Final
+2022-10-19 13:11:59.004  INFO 276 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-19 13:11:59.113  INFO 276 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.DerbyTenSevenDialect
+2022-10-19 13:11:59.617  WARN 276 --- [main] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "drop table biryani" via JDBC Statement
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "drop table biryani" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:387) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:371) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:246) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:156) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:128) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:114) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:157) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:85) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.23.jar:5.3.23]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.23.jar:5.3.23]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.23.jar:5.3.23]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.23.jar:5.3.23]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.4.jar:2.7.4]
+	at com.biryaniwala.MbabiryaniwalaApplication.main(MbabiryaniwalaApplication.java:13) ~[classes/:na]
+Caused by: java.sql.SQLSyntaxErrorException: Schema 'SA' does not exist
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.jdbc.EmbedStatement.execute(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.jdbc.EmbedStatement.execute(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-4.0.3.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	... 34 common frames omitted
+Caused by: org.apache.derby.iapi.error.StandardException: Schema 'SA' does not exist
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getSchemaDescriptor(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.iapi.sql.StatementUtil.getSchemaDescriptor(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.sql.compile.DDLStatementNode.justGetDescriptor(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.sql.compile.DDLStatementNode.getTableDescriptor(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.sql.compile.DDLStatementNode.getTableDescriptor(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.sql.compile.DropTableNode.bindStatement(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.sql.GenericStatement.prepMinion(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.sql.GenericStatement.prepare(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext.prepareInternalStatement(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	... 39 common frames omitted
+
+2022-10-19 13:11:59.656  INFO 276 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-19 13:11:59.663  INFO 276 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-19 13:12:00.000  WARN 276 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-19 13:12:00.392  INFO 276 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-19 13:12:00.399  INFO 276 --- [main] c.biryaniwala.MbabiryaniwalaApplication  : Started MbabiryaniwalaApplication in 3.769 seconds (JVM running for 4.449)
+2022-10-19 13:13:22.126  INFO 276 --- [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-10-19 13:13:22.141  INFO 276 --- [RMI TCP Connection(10)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-10-19 13:13:22.148  INFO 276 --- [RMI TCP Connection(10)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-19 13:13:22.148  INFO 276 --- [RMI TCP Connection(10)-127.0.0.1] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-10-19 13:13:22.165  INFO 276 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-19 13:13:22.167  INFO 276 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-19 13:13:24.319  INFO 5916 --- [main] c.biryaniwala.MbabiryaniwalaApplication  : Starting MbabiryaniwalaApplication using Java 17.0.3 on Bss with PID 5916 (E:\anp\mbabiryaniwala\target\classes started by chitt in E:\anp\mbabiryaniwala)
+2022-10-19 13:13:24.323  INFO 5916 --- [main] c.biryaniwala.MbabiryaniwalaApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-10-19 13:13:24.748  INFO 5916 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-19 13:13:24.792  INFO 5916 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interfaces.
+2022-10-19 13:13:25.443  INFO 5916 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-19 13:13:25.458  INFO 5916 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-19 13:13:25.458  INFO 5916 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-19 13:13:25.559  INFO 5916 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-19 13:13:25.559  INFO 5916 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1172 ms
+2022-10-19 13:13:25.786  INFO 5916 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-19 13:13:25.791  WARN 5916 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+2022-10-19 13:13:26.051  INFO 5916 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (Feature not implemented: No details.)
+2022-10-19 13:13:26.053  INFO 5916 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-19 13:13:26.097  INFO 5916 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-19 13:13:26.141  INFO 5916 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.11.Final
+2022-10-19 13:13:26.297  INFO 5916 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-19 13:13:26.406  INFO 5916 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.DerbyTenSevenDialect
+2022-10-19 13:13:26.919  WARN 5916 --- [main] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "drop table biryani_table" via JDBC Statement
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "drop table biryani_table" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:387) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:371) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:246) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:156) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:128) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:114) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:157) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:85) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.23.jar:5.3.23]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.23.jar:5.3.23]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.23.jar:5.3.23]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.23.jar:5.3.23]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.4.jar:2.7.4]
+	at com.biryaniwala.MbabiryaniwalaApplication.main(MbabiryaniwalaApplication.java:13) ~[classes/:na]
+Caused by: java.sql.SQLSyntaxErrorException: Schema 'SA' does not exist
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.jdbc.EmbedStatement.execute(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.jdbc.EmbedStatement.execute(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-4.0.3.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	... 34 common frames omitted
+Caused by: org.apache.derby.iapi.error.StandardException: Schema 'SA' does not exist
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getSchemaDescriptor(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.iapi.sql.StatementUtil.getSchemaDescriptor(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.sql.compile.DDLStatementNode.justGetDescriptor(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.sql.compile.DDLStatementNode.getTableDescriptor(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.sql.compile.DDLStatementNode.getTableDescriptor(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.sql.compile.DropTableNode.bindStatement(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.sql.GenericStatement.prepMinion(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.sql.GenericStatement.prepare(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext.prepareInternalStatement(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	... 39 common frames omitted
+
+2022-10-19 13:13:26.956  INFO 5916 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-19 13:13:26.964  INFO 5916 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-19 13:13:27.293  WARN 5916 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-19 13:13:27.580  INFO 5916 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-19 13:13:27.588  INFO 5916 --- [main] c.biryaniwala.MbabiryaniwalaApplication  : Started MbabiryaniwalaApplication in 3.673 seconds (JVM running for 4.331)
+2022-10-19 13:14:50.870  INFO 5916 --- [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-10-19 13:14:50.885  INFO 5916 --- [RMI TCP Connection(11)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-10-19 13:14:50.894  INFO 5916 --- [RMI TCP Connection(11)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-19 13:14:50.895  INFO 5916 --- [RMI TCP Connection(11)-127.0.0.1] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-10-19 13:14:50.912  INFO 5916 --- [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-19 13:14:50.914  INFO 5916 --- [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-19 13:14:52.814  INFO 11380 --- [main] c.biryaniwala.MbabiryaniwalaApplication  : Starting MbabiryaniwalaApplication using Java 17.0.3 on Bss with PID 11380 (E:\anp\mbabiryaniwala\target\classes started by chitt in E:\anp\mbabiryaniwala)
+2022-10-19 13:14:52.817  INFO 11380 --- [main] c.biryaniwala.MbabiryaniwalaApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-10-19 13:14:53.235  INFO 11380 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-19 13:14:53.277  INFO 11380 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34 ms. Found 1 JPA repository interfaces.
+2022-10-19 13:14:53.956  INFO 11380 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-19 13:14:53.973  INFO 11380 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-19 13:14:53.973  INFO 11380 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-19 13:14:54.166  INFO 11380 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-19 13:14:54.167  INFO 11380 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1289 ms
+2022-10-19 13:14:54.391  INFO 11380 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-19 13:14:54.395  WARN 11380 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+2022-10-19 13:14:54.654  INFO 11380 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (Feature not implemented: No details.)
+2022-10-19 13:14:54.656  INFO 11380 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-19 13:14:54.699  INFO 11380 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-19 13:14:54.744  INFO 11380 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.11.Final
+2022-10-19 13:14:54.899  INFO 11380 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-19 13:14:55.004  INFO 11380 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.DerbyTenSevenDialect
+2022-10-19 13:14:55.511  WARN 11380 --- [main] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "drop table biryani_table" via JDBC Statement
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "drop table biryani_table" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:387) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:371) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:246) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:156) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:128) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:114) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:157) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:85) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.23.jar:5.3.23]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.23.jar:5.3.23]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.23.jar:5.3.23]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.23.jar:5.3.23]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.4.jar:2.7.4]
+	at com.biryaniwala.MbabiryaniwalaApplication.main(MbabiryaniwalaApplication.java:13) ~[classes/:na]
+Caused by: java.sql.SQLSyntaxErrorException: Schema 'SA' does not exist
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.jdbc.EmbedStatement.execute(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.jdbc.EmbedStatement.execute(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-4.0.3.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	... 34 common frames omitted
+Caused by: org.apache.derby.iapi.error.StandardException: Schema 'SA' does not exist
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getSchemaDescriptor(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.iapi.sql.StatementUtil.getSchemaDescriptor(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.sql.compile.QueryTreeNode.getSchemaDescriptor(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.sql.compile.DDLStatementNode.justGetDescriptor(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.sql.compile.DDLStatementNode.getTableDescriptor(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.sql.compile.DDLStatementNode.getTableDescriptor(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.sql.compile.DropTableNode.bindStatement(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.sql.GenericStatement.prepMinion(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.sql.GenericStatement.prepare(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	at org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext.prepareInternalStatement(Unknown Source) ~[derby-10.14.2.0.jar:na]
+	... 39 common frames omitted
+
+2022-10-19 13:14:55.548  INFO 11380 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-19 13:14:55.556  INFO 11380 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-19 13:14:55.916  WARN 11380 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-19 13:14:56.215  INFO 11380 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-19 13:14:56.222  INFO 11380 --- [main] c.biryaniwala.MbabiryaniwalaApplication  : Started MbabiryaniwalaApplication in 3.788 seconds (JVM running for 4.467)
+2022-10-19 13:15:03.077  INFO 11380 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-19 13:15:03.077  INFO 11380 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-19 13:15:03.078  INFO 11380 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-10-19 13:15:11.565  INFO 11380 --- [http-nio-8080-exec-2] com.biryaniwala.aspect.biryaniaspect     : biryani is adding
+2022-10-19 13:15:11.674  INFO 11380 --- [http-nio-8080-exec-2] com.biryaniwala.aspect.biryaniaspect     : biryani added

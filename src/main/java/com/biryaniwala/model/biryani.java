@@ -2,6 +2,8 @@ package com.biryaniwala.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
+
 import lombok.*;
 
 @Entity
@@ -9,6 +11,7 @@ import lombok.*;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Table(name="biryani_table")
 public class biryani {
 
 	@Id
